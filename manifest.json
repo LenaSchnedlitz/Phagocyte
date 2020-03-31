@@ -3,9 +3,13 @@
   "manifest_version": 2,
   "name": "Phagocyte",
   "version": "1.0",
-  "homepage_url": "-",
   "icons": {
     "48": "icons/icon-48.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/icon-32.png",
+    "default_title": "Phagocyte",
+    "default_popup": "popup/toggle.html"
   },
   "content_scripts": [
     {
@@ -14,7 +18,23 @@
       ],
       "js": [
         "eat.js"
-      ]
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "eat.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
     }
+  ],
+  "permissions": [
+    "activeTab",
+    "storage"
   ]
 }

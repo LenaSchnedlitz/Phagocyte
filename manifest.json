@@ -11,6 +11,11 @@
     "default_title": "Phagocyte",
     "default_popup": "popup/toggle.html"
   },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{c1e25eb4-feb1-4a88-a582-9dd0dd42ed2b}"
+    }
+  },
   "content_scripts": [
     {
       "matches": [

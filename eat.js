@@ -55,8 +55,8 @@ function eatEverything() {
   eat(document.getElementsByClassName('widget-type-calltoaction'));
 }
 
-browser.storage.sync.get('enabled').then((res) => {
-  if (res.enabled) {
+browser.storage.sync.get('disabled').then((res) => {
+  if (!res.disabled) {
     eatEverything();
   }
 }).catch(() => eatEverything());

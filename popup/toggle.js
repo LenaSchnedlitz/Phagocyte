@@ -18,7 +18,7 @@ browser.storage.sync.get('disabled').then((res) => {
 button.addEventListener('click', () => {
   browser.storage.sync.get('disabled').then((res) => {
     browser.storage.sync.set({disabled: !res.disabled});
-
     toggleButton(!res.disabled);
+    browser.tabs.reload();
   });
 });

@@ -4,23 +4,31 @@ const keywords = [
   'corona',
   'cov-19',
   'covid-19',
+  'COVID19',
   'flatten the curve',
   'flattenthecurve',
   'infiziert',
+  'pic'
   'kontaktverbot',
   'maskenpflicht',
   'outbreak',
   'pandemi',
+  'pandémie'
   'quarant',
   'sars-cov-2',
   'schutzmaske',
+  'masque'
   'self isolation',
   'selbstisolation',
+  'confinement'
+  'réanimation'
   'seuche',
   'social distancing',
   'socialdistancing',
+  'distanciation sociale'
   'stay home',
   'stayhome',
+  'restez chez vous'
   'viren',
   'virus'
 ];

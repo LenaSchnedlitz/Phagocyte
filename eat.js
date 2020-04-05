@@ -1,4 +1,5 @@
 const keywords = [
+  'atemmaske',
   'beatmungsgerät',
   'confinement',
   'corona',
@@ -12,6 +13,7 @@ const keywords = [
   'kontaktverbot',
   'maskenpflicht',
   'masque',
+  'n95',
   'outbreak',
   'pandemi',
   'pandémie',
@@ -35,8 +37,8 @@ const keywords = [
 const regexp = `(${keywords.join('|')})`;
 
 const tagList = [
-    'article',
-    'iframe'
+  'article',
+  'iframe'
 ];
 const classList = [
   'article',
@@ -51,6 +53,7 @@ const classList = [
   'ie-11_Fil(n)',
   'linkBar',
   'multiTeaser-card',
+  'oon-grid-item',
   'pancake-item-1',
   'pancake-item-2',
   'pancake-item-3',

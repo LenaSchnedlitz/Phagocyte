@@ -1,34 +1,34 @@
 const keywords = [
   'beatmungsgerät',
-  'c-virus',
+  'confinement',
   'corona',
   'cov-19',
   'covid-19',
   'COVID19',
+  'distanciation sociale',
   'flatten the curve',
   'flattenthecurve',
   'infiziert',
-  'pic'
   'kontaktverbot',
   'maskenpflicht',
+  'masque',
   'outbreak',
   'pandemi',
-  'pandémie'
+  'pandémie',
   'quarant',
+  'réanimation',
+  'restez chez vous',
   'sars-cov-2',
   'schutzmaske',
-  'masque'
-  'self isolation',
   'selbstisolation',
-  'confinement'
-  'réanimation'
+  'self isolation',
   'seuche',
   'social distancing',
   'socialdistancing',
-  'distanciation sociale'
+  'stay at home',
   'stay home',
+  'stayathome',
   'stayhome',
-  'restez chez vous'
   'viren',
   'virus'
 ];

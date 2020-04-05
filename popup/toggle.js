@@ -22,6 +22,5 @@ button.addEventListener('click', () => {
     browser.storage.sync.set({disabled: !res.disabled});
     toggle(!res.disabled);
     browser.tabs.reload();
-    browser.browserAction.close();
   });
 });

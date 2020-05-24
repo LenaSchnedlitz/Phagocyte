@@ -11,4 +11,4 @@ A very basic browser extension that hides *most* news articles about the coronav
 
 ![Demo picture](https://github.com/LenaSchnedlitz/phagocyte/blob/master/demo.png)
 
-[>>> Click here to download <<<](https://addons.mozilla.org/de/firefox/addon/phagocyte/)
+[>>> Click here to download <<<](https://addons.mozilla.org/firefox/addon/phagocyte/)

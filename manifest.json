@@ -18,28 +18,17 @@
   },
   "content_scripts": [
     {
-      "matches": [
-        "*://*/*"
-      ],
-      "js": [
-        "eat.js"
-      ],
+      "matches": ["*://*/*"],
+      "js": ["eat.js"],
       "run_at": "document_end",
       "all_frames": true
     },
     {
-      "matches": [
-        "*://*/*"
-      ],
-      "js": [
-        "eat.js"
-      ],
+      "matches": ["*://*/*"],
+      "js": ["eat.js"],
       "run_at": "document_idle",
       "all_frames": true
     }
   ],
-  "permissions": [
-    "activeTab",
-    "storage"
-  ]
+  "permissions": ["activeTab", "storage"]
 }

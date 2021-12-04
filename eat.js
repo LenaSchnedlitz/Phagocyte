@@ -32,14 +32,11 @@ const keywords = [
   'stayathome',
   'stayhome',
   'viren',
-  'virus'
+  'virus',
 ];
 const regexp = `(${keywords.join('|')})`;
 
-const tagList = [
-  'article',
-  'iframe'
-];
+const tagList = ['article', 'iframe'];
 const classList = [
   'article',
   'article-preview',
@@ -69,11 +66,11 @@ const classList = [
   'vodl-news-river__item',
   'vodl-newsslider__category',
   'vodl-newsslider__list-item',
-  'widget-type-calltoaction'
+  'widget-type-calltoaction',
 ];
 
 function eat(collection) {
-  [...collection].forEach(entry => {
+  [...collection].forEach((entry) => {
     if (entry.outerHTML.toLowerCase().match(regexp)) {
       entry.style.display = 'none';
     }
@@ -81,12 +78,15 @@ function eat(collection) {
 }
 
 function eatEverything() {
-  tagList.forEach(entry => eat(document.getElementsByTagName(entry)));
-  classList.forEach(entry => eat(document.getElementsByClassName(entry)));
+  tagList.forEach((entry) => eat(document.getElementsByTagName(entry)));
+  classList.forEach((entry) => eat(document.getElementsByClassName(entry)));
 }
 
-browser.storage.sync.get('disabled').then((res) => {
-  if (!res.disabled) {
-    eatEverything();
-  }
-}).catch(() => eatEverything());
+browser.storage.sync
+  .get('disabled')
+  .then((res) => {
+    if (!res.disabled) {
+      eatEverything();
+    }
+  })
+  .catch(() => eatEverything());
